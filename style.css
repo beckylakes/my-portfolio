@@ -46,7 +46,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 14vh;
 }
 
 .nav-links {
@@ -235,7 +235,7 @@ section {
 /* ICON */
 .icon {
   cursor: pointer;
-  height: 3rem;
+  height: 2.5rem;
 }
 
 /* BUTTONS */
@@ -360,6 +360,8 @@ section {
 .center-li {
   display: flex;
   align-items: center;
+  gap: 6px;
+  padding-bottom: 4px;
 }
 
 ul .icon {
@@ -395,9 +397,11 @@ ul .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
+
 
 .project-title {
   margin: 1rem;
@@ -416,6 +420,9 @@ ul .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.project-desc {
+  padding: 0.7rem;
+}
 /* CONTACT */
 
 #contact {

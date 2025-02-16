@@ -6,10 +6,11 @@
     <title>Rebecca Lake</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
   </head>
-  <body>
+  <body id="top">
     <nav id="desktop-nav">
-      <div class="logo">Rebecca Lake</div>
+      <div class="logo"><a href="#top">Rebecca Lake</a></div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -19,7 +20,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Rebecca Lake</div>
+      <div class="logo"><a href="#top">Rebecca Lake</a></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -38,12 +39,14 @@
         <img
           src="./assets/profile-pic.png"
           alt="Rebecca Lake profile picture"
+          class="profile-pic"
         />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Rebecca Lake</h1>
-        <p class="section__text__p2">Fullstack Developer</p>
+        <div class="dynamic-titles">
+          <span class="typing"></span>
+        </div>
         <div class="btn-container">
           <button
             class="btn btn-colour-2"
@@ -56,18 +59,20 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/rebecca-lake96/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My GitHub profile"
-            class="icon"
-            onclick="location.href='https://github.com/beckylakes'"
-          />
+          <a href="https://www.linkedin.com/in/rebecca-lake96/" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="Rebecca Lake's LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/beckylakes" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="Rebecca Lake's GitHub profile"
+              class="icon"
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -285,19 +290,42 @@
       />
     </section>
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon  email-icon" />
-                <p><a href="mailto:beckylake96@gmail.com">beckylake96@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon" />
-                <p><a href="https://linkedin.com">LinkedIn</a></p>
-            </div>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:beckylake96@gmail.com" target="_blank">beckylake96@gmail.com</a>
+          </p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Linkedin icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/rebecca-lake96/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
     </section>
+    <a class="back-to-top" href="/#top">Back to Top.</a>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; 2025 Rebecca Lake. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

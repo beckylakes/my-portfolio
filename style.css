@@ -292,7 +292,7 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 0.5;
+  flex: 1;
   background: white;
   border-radius: 3rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -302,11 +302,14 @@ section {
 
 .skills-education-containers {
   display: flex;
-  gap: 1rem;
+  gap: 1.8rem;
 }
 
 .skills-list, .education-list {
   list-style: none;
+  text-align: left;
+  column-count: 2;
+  display: inline-block;
 }
 
 .section-container {
@@ -315,7 +318,15 @@ section {
 }
 
 .section__pic-container {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     margin: auto 0;
+}
+
+.center-li {
+    display: flex;
+}
+
+ul .icon {
+    cursor: default;
 }
